@@ -1,0 +1,222 @@
+/* body{
+    position: relative;
+    background-image: url("https://www.tastingtable.com/img/gallery/20-delicious-indian-dishes-you-have-to-try-at-least-once/l-intro-1645057933.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+} */
+.brdr{
+    border: 10px solid sandybrown;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+#ull {
+    margin-right: 20px;
+}
+
+#ull a {
+    margin-right: 10px;
+}
+.hero-section{
+    position: relative;
+    background-image: url("https://www.tastingtable.com/img/gallery/20-delicious-indian-dishes-you-have-to-try-at-least-once/l-intro-1645057933.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    filter: opacity(0.9);
+}
+.content{
+    text-align: center;
+}
+.content h1 {
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+.menu-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust the column size as needed */
+    gap: 20px; /* Adjust the gap between items */
+}
+.menu-item {
+    background-color: #c1b7b7;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.menu-item img {
+    max-width: 100%;
+    width: 300px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.menu-item h3 {
+    margin-top: 10px;
+}
+
+.menu-item p {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.menu-item p:last-child {
+    font-weight: bold;
+    color: #333; /* Adjust the color of the price */
+}
+.menu-item + #item5 {
+    grid-column: span 4; /* Make it span two columns */
+}
+.abtus{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    background-color: #da9968;
+    grid-auto-flow: column;
+}
+.abtus p{
+    border: 6px solid rgb(26, 18, 4);
+    font-style: italic;
+    padding-right: 10px;
+}
+.cnt{
+    display: grid;
+
+    /* grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4; */
+
+}
+
+.btn {
+    width: 140px;
+    height: 50px;
+    background: linear-gradient(to top, #8b6322, #df841b, #e95e0e);
+    color: #fff;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5); */
+    overflow: hidden;
+  }
+
+  .btn span {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: top 0.5s;
+  }
+
+  .btn-text-one {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  .btn-text-two {
+    position: absolute;
+    width: 100%;
+    top: 150%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  .btn:hover .btn-text-one {
+    top: -100%;
+  }
+
+  .btn:hover .btn-text-two {
+    top: 50%;
+  }
+  .input {
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 1em;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    transition: 300ms ease-in-out;
+  }
+  
+  .input:focus {
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696,
+               -13px -13px 100px #ffffff;
+  }
+  .ktb{
+    padding-left: 60px;
+  }
+  .hamham{
+    padding-left: 20px;
+  }
+  .form{
+    padding-left: 30px;
+    justify-self: start;
+  }
+  footer {
+    background-color: #f2f2f2;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .copyright {
+    color: #666;
+  }
+  .parent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .child {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-in-out;
+    border-radius: 50%;
+    margin: 0 5px;
+  }
+  
+  .child:hover {
+    background-color: white;
+    background-position: -100px 100px, -100px 100px;
+    transform: rotate3d(0.5, 1, 0, 30deg);
+    transform: perspective(180px) rotateX(60deg) translateY(2px);
+    box-shadow: 0px 10px 10px rgb(1, 49, 182);
+  }
+  
+  button {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+  }
+  
+  .button:hover {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate3d(0px, 0px, 15px) perspective(180px) rotateX(-35deg) translateY(2px);
+    border-radius: 50%;
+  }
